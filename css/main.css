@@ -1,0 +1,339 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.	Fonts
+2.	Reset
+3.	Global Settings
+4.	Scroll To Top style
+5.	Main Header style / Header Style One
+6.	Sticky Header
+7.	Search Popup
+8.	Mobile Menu
+9.	Lazy Load Settings
+10.	Banner Section
+11.	Section Title
+12.	Services Section
+13.	About Section
+14.	Live Section
+15.	We DO Section
+16.	Gallery Section
+17.	Fun Facts Section
+18.	We DO Section
+19.	Team Section
+20.	Parallax Section
+21.	Sponsors Section
+22.	Agency Section
+23.	News Section
+24.	Call Section
+25.	Main Footer
+26.	Services Section
+27.	We DO Section
+28.	Gallery Section
+29.	Why Us Section
+30.	Testimonials Section
+31.	Parallax Section
+32.	We DO Section
+33.	Call Section
+34.	Call Section
+35.	Services Section
+36.	Discover Section
+37.	Parallax Section
+38.	We Work Section
+39.	Testimonials Section
+40.	We DO Section
+41.	Get Quote
+42.	Map Section
+43.	Sponsors Section
+44.	Page Banner
+45.	Faqs Section
+46.	Get Quote
+47.	Error Section
+48.	Contact Section
+49.	Sidebar Page Container
+50.	Comment Area
+51.	Leave Comments Form
+52.	Service Details
+53.	Service Details
+--------------------------------------------------------------*/
+
+/*
+  font-family: 'Teko', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Rubik', sans-serif;
+*/
+
+/***
+====================================================================
+2.	Reset
+====================================================================
+ ***/
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    line-height: inherit;
+  }
+  
+  /***
+  ====================================================================
+  3.	Global Settings
+  ====================================================================
+   ***/
+  
+  :root {
+    --thm-font: "Teko", sans-serif;
+    --thm-b-font: "Rubik", sans-serif;
+    --thm-base: #ffaa17;
+    --thm-base-rgb: 255, 170, 23;
+    --thm-black: #222429;
+    --thm-text: #686a6f;
+  }
+/*  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .row {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 0px;
+  }
+  */
+  body {
+    font-size: 16px;
+    font-family: var(--thm-b-font);
+    color: var(--thm-text);
+    line-height: 2.125em;
+    font-weight: 400;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    top: 0 !important;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--thm-base);
+  }
+  
+  .theme_color {
+    color: var(--thm-base);
+  }
+  
+  a:hover,
+  a:focus,
+  a:visited,
+  a:active,
+  button:active {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    font-weight: 400;
+    margin: 0px 0px 20px;
+    background: none;
+    line-height: 1.25em;
+    font-family: var(--thm-font);
+    color: var(--thm-black);
+  }
+  
+  h1 {
+    font-size: 140px;
+  }
+  
+  h2 {
+    font-size: 70px;
+  }
+  
+  h3 {
+    font-size: 60px;
+  }
+  
+  h4 {
+    font-size: 40px;
+  }
+  
+  h5 {
+    font-size: 30px;
+  }
+  
+  h6 {
+    font-size: 26px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  input,
+  select,
+  button {
+    font-family: var(--thm-font);
+  }
+  
+  textarea {
+    overflow: hidden;
+    resize: none;
+  }
+  
+  button {
+    outline: none !important;
+    cursor: pointer;
+  }
+  
+  p {
+    line-height: 2.125em;
+    margin: 0 0 20px;
+  }
+  
+  .text {
+    line-height: 2.125em;
+    margin: 0 0;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: inherit;
+  }
+  
+  ::-moz-input-placeholder {
+    color: inherit;
+  }
+  
+  ::-ms-input-placeholder {
+    color: inherit;
+  }
+  
+  .page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+  }
+
+
+  /*=========================================================================
+  10.Banner Section
+
+  */
+  .home-section{
+      background-image: url('../imgs/slider.jpg');
+      background-size: cover;
+      background-position-y: 1216px;
+      position: fixed;
+
+      top:0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+  }
+  .home-section h5{
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  .home-section .text-container{
+    vertical-align: middle;
+  }
+  .home-section a.summary{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 0;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .home-section a.portfolio{
+    background-color: transparent;
+    border:1px solid #fff;
+    color: #fff;
+    border-radius: 0;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out;
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+  .home-section a.portfolio:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+  }
+  header{
+    color: #fff;
+    background-color: rgba(3,5,7,.9);
+    background-size: cover;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 68px;
+    right: 100px;
+    z-index: 1;
+    border-bottom: 1px solid #676868;
+    border-right:1px solid #676868; 
+    vertical-align: middle;
+  }
+  header .row{
+    height: 80px;
+  }
+  header .col-3{
+    z-index: 1;
+  }
+  header .icon-container{
+    text-align: right;
+    padding-right: 27px;
+  }
+
+
+
+  footer{
+    color: #fff;
+    background-color: rgba(3,5,7,.9);
+    background-size: cover;
+    min-height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    right: 100px;
+    z-index: 1;
+    border-bottom: 1px solid #676868;
+
+  }
+  /*right border is the after*/
+  footer::after{
+    content: '';
+    width: 1pt;
+    background-color: #676868;
+    height: 85%;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+  }
+  footer .social-container{
+padding-right: 0;
+  }
+  footer .social-container ul{
+    padding-left: 0!important;
+    text-align: center;
+  }
+  footer .social-container ul li a svg{
+    color: #fff;
+    font-size: 13px;
+
+  }
