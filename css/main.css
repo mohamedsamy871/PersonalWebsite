@@ -225,6 +225,31 @@
   10.Banner Section
 
   */
+  header{
+    color: #fff;
+    background-color: rgba(3,5,7,.9);
+    background-size: cover;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 68px;
+    right: 100px;
+    z-index: 1;
+    border-bottom: 1px solid #676868;
+    border-right:1px solid #676868; 
+    vertical-align: middle;
+  }
+  header .row{
+    height: 80px;
+  }
+  header .col-3{
+    z-index: 1;
+  }
+  header .icon-container{
+    text-align: right;
+    padding-right: 27px;
+  }
+  /*===========================Home Section========================*/
   .home-section{
       background-image: url('../imgs/slider.jpg');
       background-size: cover;
@@ -242,7 +267,7 @@
       height: 100%;
       color: #fff;
   }
-  .home-section h5{
+  .home-section h3{
     color: #fff;
     letter-spacing: 2px;
   }
@@ -274,33 +299,53 @@
     color: #000;
     border: 1px solid #fff;
   }
-  header{
-    color: #fff;
-    background-color: rgba(3,5,7,.9);
-    background-size: cover;
-    min-height: 80px;
-    position: fixed;
-    top: 0;
-    left: 68px;
-    right: 100px;
-    z-index: 1;
-    border-bottom: 1px solid #676868;
-    border-right:1px solid #676868; 
-    vertical-align: middle;
-  }
-  header .row{
-    height: 80px;
-  }
-  header .col-3{
-    z-index: 1;
-  }
-  header .icon-container{
-    text-align: right;
-    padding-right: 27px;
-  }
+/*==========================content section==========================*/
+.content-section{
+  /*temporary styling*/
+  position: absolute;
+  bottom: 0;
+  left:0;
+
+    /*temporary styling*/
+  max-width: 50%;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================Footer==================================*/
   footer{
     color: #fff;
     background-color: rgba(3,5,7,.9);
