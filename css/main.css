@@ -124,7 +124,7 @@
     color: var(--thm-base);
   }
   
-  a:hover,
+  a,a:hover,
   a:focus,
   a:visited,
   a:active,
@@ -157,7 +157,7 @@
   }
   
   h3 {
-    font-size: 60px;
+    font-size: 48px;
   }
   
   h4 {
@@ -232,12 +232,21 @@
     min-height: 80px;
     position: fixed;
     top: 0;
-    left: 68px;
+    left:0;
     right: 100px;
     z-index: 1;
-    border-bottom: 1px solid #676868;
-    border-right:1px solid #676868; 
     vertical-align: middle;
+  }
+  .header-container{
+    background-color: rgba(3,5,7,.9);
+    background-size: cover;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 68px;
+    right: 100px;
+    border-bottom: 1px solid #222325;
+    border-right:1px solid #222325; 
   }
   header .row{
     height: 80px;
@@ -248,6 +257,9 @@
   header .icon-container{
     text-align: right;
     padding-right: 27px;
+  }
+  header .icon-container svg{
+    color: #fff;
   }
   /*===========================Home Section========================*/
 
@@ -288,30 +300,46 @@
   .home-section .text-container{
     vertical-align: middle;
   }
-  .home-section a.summary{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #fff;
+  .home-section .text-container p{
+    font-size: 21px;
+    margin-bottom: 52px;
+  }
+  .home-section a{
     border-radius: 0;
-    text-decoration: none;
     transition: all 0.7s ease-in-out;
-    padding: 10px 15px;
-    font-size: 13px;
+    padding: 15px 45px;
+    font-size: 17px;
+    border: 1px solid #fff;
+  }
+  .home-section a.summary{
+    color: #000;
+    background-color: #fff;
   }
   .home-section a.portfolio{
     background-color: transparent;
-    border:1px solid #fff;
     color: #fff;
-    border-radius: 0;
-    text-decoration: none;
-    transition: all 0.7s ease-in-out;
-    padding: 10px 15px;
-    font-size: 13px;
   }
   .home-section a.portfolio:hover{
     background-color: #fff;
     color: #000;
     border: 1px solid #fff;
+  }
+  .home-section .nav-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+  }
+  .home-section .nav-overlay .nav-menu{
+    color: #fff;
+    vertical-align: middle;
+
   }
 /*==========================content section==========================*/
 .content-section{
@@ -328,37 +356,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*==============================Footer==================================*/
   footer{
     color: #fff;
@@ -366,15 +363,16 @@
     background-size: cover;
     min-height: 300px;
     position: fixed;
-    top: 0;
+    top: 81px;
     left: 0;
     width: 80px;
     right: 100px;
     z-index: 1;
-    border-bottom: 1px solid #676868;
+    border-bottom: 1px solid #222325;
+    border-right: 1px solid #222325;
 
   }
-  /*right border is the after*/
+  /*right border is the after
   footer::after{
     content: '';
     width: 1pt;
@@ -383,7 +381,7 @@
     position: absolute;
     top: 80px;
     left: 100%;
-  }
+  }*/
   footer .social-container{
 padding-right: 0;
   }
