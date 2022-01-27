@@ -428,3 +428,43 @@ padding-right: 0;
     font-size: 13px;
 
   }
+
+
+
+  /*personal info section========START================*/
+  .brief-section{
+    padding:90px 0 40px;
+    background-color: #4ac2be;
+  }
+.brief-section .container{
+  max-width: 960px;
+}
+.brief-section .brief-container,
+.brief-section .brief-container h4,
+.brief-section .brief-container h6{
+  color: #fff;
+}
+.brief-section .brief-container h4{
+  margin-bottom: 0;
+}
+.brief-section .brief-container h6{
+  font-weight: 100;
+}
+.brief-section p{
+  text-align: justify;
+}
+
+.personal-info-container p,
+.personal-info-container a{
+  color: #fff;
+}
+.personal-info-buttons a{
+  color: #fff;
+}
+
+
+
+
+
+
+  /*personal info section========End================*/
