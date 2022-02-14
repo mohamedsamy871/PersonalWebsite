@@ -433,7 +433,12 @@ padding-right: 0;
   /*personal info section========START================*/
   .brief-section{
     padding:90px 0 40px;
-    background-color: var(--thm-base);
+    background-color: var(--thm-base-dark);
+    position: relative;
+  }
+  .brief-section p{
+    line-height: 1.7em!important;
+    margin-bottom: 0;
   }
 .brief-section .container{
   max-width: 960px;
@@ -451,6 +456,7 @@ padding-right: 0;
 }
 .brief-section .brief-container h6{
   font-weight: 100;
+  margin-top: 10px;
 }
 .brief-section .brief-container .subtitle{
   font-size: 0.8rem;
@@ -475,10 +481,19 @@ padding-right: 0;
  
   .contacts-container{
     padding:90px 0 40px;
-    background-color: var(--thm-base-dark);
   }
 
+.introBg{
+  background-color: var(--thm-base);
+  width: 50%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 
+
+}
 
 
 
