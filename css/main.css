@@ -85,8 +85,11 @@
   
   :root {
     --thm-font: "Teko", sans-serif;
+    --heading-font:'Roboto', sans-serif;
     --thm-b-font: "Rubik", sans-serif;
-    --thm-base: #ffaa17;
+    --thm-base: #7c001f;
+    --thm-base-dark:#580b1e;
+
     --thm-base-rgb: 255, 170, 23;
     --thm-black: #222429;
     --thm-text: #686a6f;
@@ -108,7 +111,7 @@
     color: var(--thm-text);
     line-height: 2.125em;
     font-weight: 400;
-    background: #ffffff;
+    background: #000;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     top: 0 !important;
@@ -117,13 +120,9 @@
   a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--thm-base);
+    color: var(--thm-black);
   }
-  
-  .theme_color {
-    color: var(--thm-base);
-  }
-  
+
   a,a:hover,
   a:focus,
   a:visited,
@@ -434,7 +433,7 @@ padding-right: 0;
   /*personal info section========START================*/
   .brief-section{
     padding:90px 0 40px;
-    background-color: #4ac2be;
+    background-color: var(--thm-base);
   }
 .brief-section .container{
   max-width: 960px;
@@ -443,15 +442,22 @@ padding-right: 0;
 .brief-section .brief-container h4,
 .brief-section .brief-container h6{
   color: #fff;
+
 }
 .brief-section .brief-container h4{
   margin-bottom: 0;
+  font-family: var(--thm-font);
+  margin-bottom: -6px;
 }
 .brief-section .brief-container h6{
   font-weight: 100;
 }
+.brief-section .brief-container .subtitle{
+  font-size: 0.8rem;
+}
 .brief-section p{
-  text-align: justify;
+  /*text-align: justify;
+  word-spacing: -2px;*/
 }
 
 .personal-info-container p,
@@ -463,8 +469,17 @@ padding-right: 0;
 }
 
 
-
-
-
-
   /*personal info section========End================*/
+
+    /*Contacts section========START================*/
+ 
+  .contacts-container{
+    padding:90px 0 40px;
+    background-color: var(--thm-base-dark);
+  }
+
+
+
+
+
+   /*personal info section========End================*/
