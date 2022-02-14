@@ -470,8 +470,15 @@ padding-right: 0;
 .personal-info-container a{
   color: #fff;
 }
+.personal-info-buttons{
+  margin-top: 15px;
+}
 .personal-info-buttons a{
   color: #fff;
+  background-color: var(--thm-base);
+  border: none;
+  border-radius: 0;
+  padding:10px 20px;
 }
 
 
