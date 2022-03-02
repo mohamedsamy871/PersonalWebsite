@@ -87,8 +87,11 @@
     --thm-font: "Teko", sans-serif;
     --heading-font:'Roboto', sans-serif;
     --thm-b-font: "Rubik", sans-serif;
-    --thm-base: #7c001f;
+   /* --thm-base: #7c001f;
     --thm-base-dark:#580b1e;
+*/
+--thm-base:#5c0707;
+--thm-base-dark:#560000;
 
     --thm-base-rgb: 255, 170, 23;
     --thm-black: #222429;
@@ -470,8 +473,15 @@ padding-right: 0;
 .personal-info-container a{
   color: #fff;
 }
+.personal-info-buttons-container{
+  margin-left: 2px;
+}
 .personal-info-buttons{
   margin-top: 15px;
+  padding: 0!important;
+}
+.personal-info-buttons .col-lg-6{
+  
 }
 .personal-info-buttons a{
   color: #fff;
@@ -479,6 +489,43 @@ padding-right: 0;
   border: none;
   border-radius: 0;
   padding:10px 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.personal-info-buttons a .btn-curve{
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 26px;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.2;
+  z-index: 0;
+  -webkit-transform: skewX(-22deg);
+          transform: skewX(-22deg);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.personal-info-buttons a:hover .btn-curve{
+  opacity: 1;
+  right: 0;
+  width: 100%;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
+}
+@media (max-width:990px){
+  .introBg{
+    display: none;
+  }
 }
 
 
@@ -501,7 +548,13 @@ padding-right: 0;
 
 
 }
-
-
+.personal-photo-container{
+  text-align: center;
+}
+.personal-photo-container img{
+  background-color: #580b1e;
+  width: 122px;
+  height: 122px;
+}
 
    /*personal info section========End================*/
